@@ -6,7 +6,7 @@
 
 基于[mxnet](https://github.com/dmlc/mxnet)、lstm、ctc的6位 `数字+字符` 验证码识别
 
-同时可以扩展到省份证、银行卡、车牌识别等等
+同时可以扩展到身份证、银行卡、车牌识别等等
 
 代码改于[官方](https://github.com/dmlc/mxnet/blob/master/example/warpctc/lstm_ocr.py)的4位数字验证码识别
 
