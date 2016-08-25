@@ -138,7 +138,7 @@ def Accuracy(label, pred):
 
 if __name__ == '__main__':
     num_hidden = 128
-    num_lstm_layer = 2
+    num_lstm_layer = 4
     num_epoch = 10
     learning_rate = 0.01
     momentum = 0.9
