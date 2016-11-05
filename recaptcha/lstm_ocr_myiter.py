@@ -99,7 +99,7 @@ class OCRIter(mx.io.DataIter):
 
 
 BATCH_SIZE = 100
-SEQ_LENGTH = 80
+SEQ_LENGTH = 30
 
 def ctc_label(p):
     ret = []
