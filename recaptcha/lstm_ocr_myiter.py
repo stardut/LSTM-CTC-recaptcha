@@ -146,7 +146,7 @@ if __name__ == '__main__':
 
     prefix = 'mymodel/mymodel'
     iteration = 5
-    contexts = [mx.context.gpu(3)]
+    contexts = [mx.context.gpu(0)]
 
     def sym_gen(seq_len):
         return lstm_unroll(num_lstm_layer, seq_len,
