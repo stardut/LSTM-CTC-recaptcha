@@ -105,7 +105,7 @@ class OCRIter(mx.io.DataIter):
 
 
 BATCH_SIZE = 100
-SEQ_LENGTH = 80
+SEQ_LENGTH = 30
 
 def ctc_label(p):
     ret = []
@@ -152,7 +152,7 @@ if __name__ == '__main__':
 
     prefix = 'mymodel/mymodel'
     iteration = 5
-    contexts = [mx.context.gpu(3)]
+    contexts = [mx.context.gpu(0)]
 
     def sym_gen(seq_len):
         return lstm_unroll(num_lstm_layer, seq_len,
