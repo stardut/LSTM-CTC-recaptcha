@@ -48,6 +48,12 @@ def get_label(buf):
             ret[i] = maps[buf[i]]
     return ret
 
+def is_num(char):
+    for x in '0123456789':
+        if x == char:
+            return True
+    return False
+
 
 class OCRIter(mx.io.DataIter):
     def __init__(self, batch_size, num_label, init_states, path, check):
